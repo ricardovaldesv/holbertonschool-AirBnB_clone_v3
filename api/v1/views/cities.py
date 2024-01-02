@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+Contains the app_views of cities
+"""
 from api.v1.views import app_views
 from flask import jsonify, abort, request
 from models import storage, State, City
