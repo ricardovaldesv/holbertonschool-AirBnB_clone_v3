@@ -13,14 +13,14 @@ app.register_blueprint(app_views)
 
 @app.teardown_appcontext
 def clean_up_all(exc):
-    '''Función de limpieza que se ejecutará al
-    finalizar el contexto de la aplicación'''
+    """Función de limpieza que se ejecutará al
+    finalizar el contexto de la aplicación"""
     storage.close()
 
 
 @app.errorhandler(404)
 def not_found_error(e):
-    '''Error handler 404'''
+    """Error handler 404"""
     return {'error': 'Not found'}, 404
 
 
