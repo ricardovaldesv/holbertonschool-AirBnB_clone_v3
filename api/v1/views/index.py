@@ -18,6 +18,7 @@ def test_status():
     '''Test the status of the route'''
     return jsonify({'status': 'OK'})
 
+
 @app_views.route('/stats')
 def clases_count():
     '''endpoint that retrieves the number of each objects by type'''
